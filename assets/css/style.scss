@@ -1,5 +1,325 @@
 // Site styles, compiled by Cecil (see `layouts/page.html.twig`)
 $gap: 1rem;
+$ivory: #f8f3ee;
+$champagne: #e8d8c8;
+$taupe: #b99a86;
+$mocha: #6b4d3d;
+$graphite: #221d1b;
+$muted: #665954;
+
+:root {
+  --pico-primary: #6b4d3d;
+  --pico-primary-hover: #563d33;
+  --pico-background-color: #f8f3ee;
+  --pico-text-color: #221d1b;
+  --pico-muted-color: #665954;
+}
+
+body {
+  background: linear-gradient(180deg, #f9f5f1 0%, #f1e7e1 100%);
+  color: $graphite;
+}
+
+main {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+.catalog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin: 2.5rem 0 1.5rem;
+}
+
+.catalog-header h2 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: -0.05em;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.product-item {
+  background: rgba(255,255,255,0.82);
+  border: 1px solid rgba(107, 77, 61, 0.08);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 14px 30px rgba(34, 29, 27, 0.04);
+}
+
+.product-image {
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-image.dress {
+  background: linear-gradient(135deg, #e6d7d0, #c9a792);
+}
+
+.product-image.coat {
+  background: linear-gradient(135deg, #efe3db, #b8957d);
+}
+
+.product-image.set {
+  background: linear-gradient(135deg, #f0e7e2, #d8bca5);
+}
+
+.product-image.blouse {
+  background: linear-gradient(135deg, #f5efe9, #d9bb9f);
+}
+
+.product-image.jeans {
+  background: linear-gradient(135deg, #dfe5e4, #a5ada8);
+}
+
+.product-image.scarf {
+  background: linear-gradient(135deg, #f2e5da, #caa687);
+}
+
+.product-info {
+  padding: 1.2rem;
+}
+
+.category {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $mocha;
+  margin-bottom: 0.6rem;
+}
+
+.product-info h3 {
+  margin: 0 0 0.6rem;
+  color: $graphite;
+}
+
+.product-info p {
+  margin: 0 0 1rem;
+  color: $muted;
+}
+
+.product-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.product-meta strong {
+  color: $graphite;
+  font-size: 1.1rem;
+}
+
+.product-meta button {
+  border: 0;
+  background: $graphite;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .catalog-header {
+    display: block;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+header,
+footer {
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(5px);
+}
+
+.hero-banner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2.5rem;
+  align-items: center;
+  background: linear-gradient(135deg, #fffdfb 0%, #f3e8df 100%);
+  border: 1px solid rgba(107, 77, 61, 0.12);
+  border-radius: 30px;
+  box-shadow: 0 22px 42px rgba(34, 29, 27, 0.08);
+  padding: 3rem;
+  margin-bottom: 2rem;
+}
+
+.eyebrow,
+.topline {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: $mocha;
+  margin-bottom: 0.9rem;
+}
+
+.hero-banner h1 {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.96;
+  letter-spacing: -0.06em;
+  margin: 0 0 1rem;
+}
+
+.hero-copy p {
+  font-size: 1.08rem;
+  max-width: 580px;
+}
+
+.cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.9rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.button.primary {
+  background: linear-gradient(135deg, $mocha, $graphite);
+  color: #fff;
+  box-shadow: 0 16px 28px rgba(34, 29, 27, 0.14);
+}
+
+.button.secondary {
+  background: rgba(107, 77, 61, 0.06);
+  color: $graphite;
+  border: 1px solid rgba(107, 77, 61, 0.1);
+}
+
+.hero-visual {
+  min-height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(184, 154, 134, 0.15), rgba(255, 255, 255, 0.1));
+  border-radius: 26px;
+  border: 1px solid rgba(107, 77, 61, 0.08);
+}
+
+.editorial-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(247, 239, 234, 0.9) 100%);
+  border-radius: 24px;
+  padding: 2rem;
+  width: min(100%, 320px);
+  box-shadow: 0 20px 34px rgba(51, 41, 37, 0.08);
+  border: 1px solid rgba(107, 77, 61, 0.08);
+}
+
+.sup-label {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $mocha;
+  margin-bottom: 0.8rem;
+}
+
+.editorial-card h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2.2rem;
+  letter-spacing: -0.04em;
+}
+
+.editorial-card p {
+  margin: 0;
+  color: $muted;
+}
+
+.intro-quote {
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  font-style: italic;
+  color: $mocha;
+  margin: 2rem 0;
+}
+
+.shop-grid,
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.feature-card,
+.product-card,
+.story-block {
+  background: rgba(255,255,255,0.8);
+  border: 1px solid rgba(107, 77, 61, 0.08);
+  border-radius: 24px;
+  padding: 1.6rem;
+  box-shadow: 0 14px 30px rgba(34, 29, 27, 0.04);
+}
+
+.icon {
+  display: inline-block;
+  color: $mocha;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.8rem;
+}
+
+.feature-card h2,
+.product-card h3,
+.story-block h2 {
+  color: $mocha;
+}
+
+.product-strip {
+  margin-top: 2.5rem;
+}
+
+.section-head {
+  margin-bottom: 1rem;
+}
+
+.section-head h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(107, 77, 61, 0.07);
+  color: $mocha;
+  border-radius: 999px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+.story-block {
+  margin-top: 2rem;
+}
 
 .footer-links ul {
   display: flex;
@@ -22,4 +342,16 @@ article time {
   display: block;
   margin-bottom: $gap;
   color: var(--pico-muted-color);
+}
+
+@media (max-width: 768px) {
+  .hero-banner,
+  .shop-grid,
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-banner {
+    padding: 1.5rem;
+  }
 }

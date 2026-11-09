@@ -1,5 +1,9 @@
 # Links displayed in the footer (see `layouts/page.html.twig`)
-- name: Documentation
-  url: https://cecil.app/documentation/
-- name: GitHub
-  url: https://github.com/Cecilapp/Cecil
+- name: Gmail
+  url: mailto:kasokimastakigiulia@gmail.com
+- name: Téléphone
+  url: tel:0970474865
+- name: À propos
+  url: /about
+- name: Boutique
+  url: /boutique

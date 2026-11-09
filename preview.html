@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GIULIA SHOP — Aperçu</title>
+    <style>
+      :root {
+        --primary: #b8907a;
+        --primary-dark: #8d6655;
+        --secondary: #d7c4b5;
+        --background: #f5f0eb;
+        --panel: #f2ece8;
+        --text: #2d2422;
+        --muted: #655a56;
+        --white: #ffffff;
+        --shadow: rgba(45, 36, 34, 0.08);
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, #f8f3f1 0%, #f1e9e4 100%);
+        color: var(--text);
+      }
+
+      header {
+        background: rgba(255,255,255,0.86);
+        border-bottom: 1px solid rgba(184, 144, 122, 0.18);
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(6px);
+      }
+
+      .nav {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .brand {
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--primary);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        font-size: 0.9rem;
+      }
+
+      .nav-links a {
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1rem 4rem;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.3fr 0.7fr;
+        gap: 2rem;
+        align-items: center;
+        background: linear-gradient(135deg, #fffdfc 0%, #f3ebe6 100%);
+        border: 1px solid rgba(184, 144, 122, 0.15);
+        border-radius: 26px;
+        box-shadow: 0 18px 40px var(--shadow);
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--primary);
+        margin: 0 0 0.75rem;
+      }
+
+      h1 {
+        font-size: clamp(2.2rem, 4vw, 4rem);
+        line-height: 1.05;
+        margin: 0 0 1rem;
+      }
+
+      p {
+        line-height: 1.6;
+      }
+
+      .cta-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+
+      .button {
+        display: inline-block;
+        padding: 0.9rem 1.4rem;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s ease;
+      }
+
+      .button:hover { transform: translateY(-1px); }
+      .button.primary {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: #fff;
+        box-shadow: 0 10px 20px rgba(141, 102, 85, 0.16);
+      }
+      .button.secondary {
+        background: rgba(184, 144, 122, 0.08);
+        color: var(--text);
+        border: 1px solid rgba(184, 144, 122, 0.18);
+      }
+
+      .hero-visual {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 260px;
+        background: radial-gradient(circle at center, rgba(217,169,141,0.35), rgba(255,255,255,0.15) 60%);
+        border-radius: 20px;
+      }
+
+      .mini-card {
+        background: linear-gradient(180deg, #fff 0%, #f4eee9 100%);
+        border-radius: 20px;
+        padding: 1.5rem;
+        width: min(100%, 280px);
+        box-shadow: 0 20px 30px rgba(42,29,26,0.08);
+        border: 1px solid rgba(184, 144, 122, 0.12);
+      }
+
+      .mini-card .tag {
+        display: inline-block;
+        background: rgba(184, 144, 122, 0.12);
+        color: var(--primary-dark);
+        border-radius: 999px;
+        padding: 0.35rem 0.7rem;
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+      }
+
+      .mini-card strong {
+        display: block;
+        font-size: 1.4rem;
+        margin-bottom: 0.35rem;
+      }
+
+      .mini-card small {
+        color: var(--muted);
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin: 2rem 0;
+      }
+
+      .card, .story {
+        background: rgba(255,255,255,0.78);
+        border: 1px solid rgba(184, 144, 122, 0.12);
+        border-radius: 20px;
+        padding: 1.5rem;
+        box-shadow: 0 12px 30px rgba(42,29,26,0.04);
+      }
+
+      .card h2, .story h2 {
+        color: var(--primary-dark);
+        margin-top: 0;
+      }
+
+      footer {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1rem 1rem 3rem;
+        color: var(--muted);
+      }
+
+      .footer-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      @media (max-width: 768px) {
+        .hero, .features { grid-template-columns: 1fr; }
+        .nav { flex-direction: column; gap: 1rem; }
+        .hero { padding: 1.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="brand">GIULIA SHOP</div>
+        <nav class="nav-links">
+          <a href="#accueil">Accueil</a>
+          <a href="#apropos">À propos</a>
+          <a href="#boutique">Boutique</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div>
+          <p class="eyebrow">Boutique en ligne</p>
+          <h1>Des essentiels qui font la différence.</h1>
+          <p>GIULIA SHOP réunit des produits choisis avec soin pour embellir votre quotidien, avec une touche de douceur, de style et de praticité.</p>
+          <div class="cta-row">
+            <a class="button primary" href="#apropos">Découvrir notre histoire</a>
+            <a class="button secondary" href="#boutique">Voir nos univers</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="mini-card">
+            <span class="tag">Nouveautés</span>
+            <strong>La sélection du moment</strong>
+            <small>Beauté • Maison • Accessoires</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="boutique" class="features">
+        <article class="card">
+          <h2>Mode douce</h2>
+          <p>Des pièces simples, élégantes et faciles à porter au quotidien.</p>
+        </article>
+        <article class="card">
+          <h2>Beauté</h2>
+          <p>Une sélection pensée pour sublimer votre routine et prendre soin de vous.</p>
+        </article>
+        <article class="card">
+          <h2>Essentiels maison</h2>
+          <p>Des objets utiles et beaux qui donnent du confort à chaque espace.</p>
+        </article>
+      </section>
+
+      <section id="apropos" class="story">
+        <h2>Pourquoi nous choisir ?</h2>
+        <p>Chez GIULIA SHOP, chaque sélection est faite pour allier qualité, élégance et utilité. Nous aimons les produits qui rendent le quotidien plus agréable, sans complications ni surconsommation.</p>
+      </section>
+
+      <section id="contact" class="story" style="margin-top: 1.5rem;">
+        <h2>Contact</h2>
+        <p><strong>Téléphone :</strong> <a href="tel:0970474865">0970474865</a></p>
+        <p><strong>Gmail :</strong> <a href="mailto:kasokimastakigiulia@gmail.com">kasokimastakigiulia@gmail.com</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-links">
+        <a href="mailto:kasokimastakigiulia@gmail.com">Gmail</a>
+        <a href="tel:0970474865">Téléphone</a>
+        <a href="#apropos">À propos</a>
+      </div>
+    </footer>
+  </body>
+</html>

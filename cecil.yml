@@ -1,32 +1,43 @@
 # Site configuration: https://cecil.app/documentation/configuration/
-title: 'MASTAKI shop'
-baseline: 'Le meilleur est chez nous'
+title: 'GIULIA SHOP'
+baseline: 'Mode douce, beauté & essentiels du quotidien'
 baseurl: /
-description: 'A website created with Cecil static site generator.'
+description: 'Boutique en ligne de mode, beauté et accessoires avec une sélection pensée pour le quotidien.'
 language: fr-FR
 languages:
   - code: fr-FR
     name: Français
     locale: fr_FR
 author:
-  name: 'GIULIA Tech'
+  name: 'GIULIA SHOP'
 image: icon.png # default image of social networks cards, stored in `assets/`
 taxonomies:
   tags: tag
-## Additional entries of the main menu (pages are added with their `menu` front matter variable)
-#menus:
-#  main:
-#    - id: github
-#      name: GitHub
-#      url: https://github.com/
-#      weight: 99
+menus:
+  main:
+    - id: accueil
+      name: Accueil
+      url: /
+      weight: 10
+    - id: boutique
+      name: Boutique
+      url: /boutique
+      weight: 20
+    - id: about
+      name: À propos
+      url: /about
+      weight: 30
+    - id: contact
+      name: Contact
+      url: /contact
+      weight: 40
 ## Number of pages per page of a paginated list
 #pages:
 #  pagination:
 #    max: 5
 ## Dates format
 #date:
-#  format: 'F j, Y'
+#  format: 'd F Y'
 ## Default robots directive
 #metatags:
 #  robots: index,follow
