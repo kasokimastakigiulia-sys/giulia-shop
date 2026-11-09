@@ -1,6 +1,6 @@
 ---
 title: Accueil
-description: Boutique premium GIULIA SHOP : mode, beauté et maison raffinée.
+description: "Boutique premium GIULIA SHOP : mode, beauté et maison raffinée."
 ---
 <section class="hero-banner luxury">
   <div class="hero-copy">

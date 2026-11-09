@@ -1,7 +1,7 @@
 # Site configuration: https://cecil.app/documentation/configuration/
 title: 'GIULIA SHOP'
 baseline: 'Mode douce, beauté & essentiels du quotidien'
-baseurl: /
+baseurl: /giulia-shop/
 description: 'Boutique en ligne de mode, beauté et accessoires avec une sélection pensée pour le quotidien.'
 language: fr-FR
 languages:
