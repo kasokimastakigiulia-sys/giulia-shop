@@ -17,7 +17,9 @@ menu:
 
 <section class="catalog-grid">
   <article class="product-item">
-    <div class="product-image dress"></div>
+    <div class="product-image dress">
+      <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Robe élégante portée en extérieur" loading="lazy" decoding="async">
+    </div>
     <div class="product-info">
       <span class="category">Vêtements</span>
       <h3>Robe légère</h3>
@@ -30,7 +32,9 @@ menu:
   </article>
 
   <article class="product-item">
-    <div class="product-image coat"></div>
+    <div class="product-image coat">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Veste légère de style urbain" loading="lazy" decoding="async">
+    </div>
     <div class="product-info">
       <span class="category">Vêtements</span>
       <h3>Veste légère</h3>
@@ -43,7 +47,9 @@ menu:
   </article>
 
   <article class="product-item">
-    <div class="product-image set"></div>
+    <div class="product-image set">
+      <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Ensemble casual pour une tenue moderne" loading="lazy" decoding="async">
+    </div>
     <div class="product-info">
       <span class="category">Ensemble</span>
       <h3>Ensemble casual</h3>
@@ -56,7 +62,9 @@ menu:
   </article>
 
   <article class="product-item">
-    <div class="product-image blouse"></div>
+    <div class="product-image blouse">
+      <img src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Blouse raffinée sur cintre" loading="lazy" decoding="async">
+    </div>
     <div class="product-info">
       <span class="category">Vêtements</span>
       <h3>Blouse satinée</h3>
@@ -69,7 +77,9 @@ menu:
   </article>
 
   <article class="product-item">
-    <div class="product-image jeans"></div>
+    <div class="product-image jeans">
+      <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Jean bleu premium" loading="lazy" decoding="async">
+    </div>
     <div class="product-info">
       <span class="category">Vêtements</span>
       <h3>Jean premium</h3>
@@ -82,7 +92,9 @@ menu:
   </article>
 
   <article class="product-item">
-    <div class="product-image scarf"></div>
+    <div class="product-image scarf">
+      <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Écharpe douce aux tons neutres" loading="lazy" decoding="async">
+    </div>
     <div class="product-info">
       <span class="category">Accessoires</span>
       <h3>Écharpe luxe</h3>
